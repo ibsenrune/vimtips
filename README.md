@@ -37,3 +37,21 @@ to move between these:
 |`yt.`| Yank (copy) from current position until but not including next `.`|
 |`yf.`| Yank (copy) from current position until and including next `.`|
 
+## Visual Block Mode
+
+Visual block mode allows you to edit a consecutive set of lines in one go. You enter Visual Block Mode, select a number of consecutive lines, perform the desired operation and then, when you hit `ESC`, the operation is performed on all the selected lines.
+
+You enter Visual Block Mode by pressing `C-q`. Once in Visual Block Mode, you may select the lines to affect using the usual `h`, `j`, `k`, and `l` keys. Next, press `I` to place the cursor before the first selection and change to insert mode. You are now ready to insert something at the front of each line. Alternatively, press `A` to move the curser to the end of the line and change to insert mode, getting ready to append something to each line. Type whatever you want to insert. When you hit `ESC`, your changes will be performed on each selected line.
+
+#### An aside: Visual Block Mode on Windows
+On linux, you enter Visual Block Mode by pressing `C-v`. However, this key combination is used for pasting text on Windows, so VIM offers an alternative, `C-q`.
+
+There is another caveat, though: `C-q` has a special meaning in some terminals, so if you run VIM in a terminal, the terminal may catch the `C-q` key combination. Thus, to be able to enter Visual Block Mode on Windows while running VIM in a terminal, you will have to unset this behaviour of your terminal. If you are running bash, you may do this by putting
+
+```
+stty start undef
+```
+
+in your `.bashrc` file.
+
+
