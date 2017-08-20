@@ -21,3 +21,19 @@ to move between these:
 |`E`    | Go to the end of the WORD|
 |`B`    | Go to the beginning of the WORD|
 
+### Editing
+
+#### Deleting text
+
+|Command|Effect|
+|-------|------|
+|`dd`   | Delete current line|
+|`dt.`  | Delete from current position until (not including) next `.` (on current line only)|
+|`df.`  | Delete from current position until (and including) next `.` (on current line only)|
+
+#### Copying and pasting
+
+|Command|Effect|
+|`yt.`| Yank (copy) from current position until but not including next `.`|
+|`yf.`| Yank (copy) from current position until and including next `.`|
+
