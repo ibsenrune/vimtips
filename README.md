@@ -61,4 +61,12 @@ stty start undef
 
 in your `.bashrc` file.
 
+## Tags
 
+To create a `tags` file run 
+
+```
+ctags -R .
+```
+
+on the command line at the top of your project. Now, when using Vim, you may use `C-]` to go to the definition of a symbol.
