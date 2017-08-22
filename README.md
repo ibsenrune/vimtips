@@ -21,6 +21,12 @@ to move between these:
 |`E`    | Go to the end of the WORD|
 |`B`    | Go to the beginning of the WORD|
 
+|Command|Effect|
+|-------|------|
+|`^`    | Go to the first non-whitespace character of the line |
+|`$`    | Go to the last character of the line |
+|`A`    | Go to the last character of the line and enter INSERT mode |
+
 ### Editing
 
 #### Deleting text
@@ -34,6 +40,7 @@ to move between these:
 #### Copying and pasting
 
 |Command|Effect|
+|-------|------|
 |`yt.`| Yank (copy) from current position until but not including next `.`|
 |`yf.`| Yank (copy) from current position until and including next `.`|
 
