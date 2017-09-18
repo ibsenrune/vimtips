@@ -70,3 +70,12 @@ ctags -R .
 ```
 
 on the command line at the top of your project. Now, when using Vim, you may use `C-]` to go to the definition of a symbol.
+
+# Diffing with VIM
+
+To diff two files using VIM, start VIM with the `-d` option:
+
+```
+vim -d file1 file2
+```
+
