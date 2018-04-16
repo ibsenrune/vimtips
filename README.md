@@ -79,3 +79,37 @@ To diff two files using VIM, start VIM with the `-d` option:
 vim -d file1 file2
 ```
 
+# Windows
+
+Opening and closing windows:
+
+|Command|Effect|
+|-------|-----------|
+|`<C-w>s`|Split current window horizontally (then use `:e <filename>` to open new file)|
+|`<C-w>v`|Split current window vertically (then use `:e <filename>` to open new file)|
+|`:clo`|Close window|
+
+Navigating between windows:
+
+|Command|Effect|
+|-------|------|
+|`<C-w>w`|Cycle between windows|
+|`<C-w>h`|Go to window to the left|
+|`<C-w>j`|Go to window below|
+|`<C-w>k`|Go to window above|
+|`<C-w>l`|Go to window to the right|
+
+Controlling windows:
+
+|Command|Effect|
+|-------|------|
+|`<C-w>=`|Make windows of equal height and width|
+|`<C-w>_`|Maximize height of current window|
+|`<C-w>\|`|Maximize width of current window|
+|`N<C-w>_`|Set height of current window to `N`|
+|`N<C-w>\|`|Set width of current window to `N`|
+|`<C-w>H`|Move window left|
+|`<C-w>J`|Move window down|
+|`<C-w>K`|Move window up|
+|`<C-w>L`|Move window right|
+
