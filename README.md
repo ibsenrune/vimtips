@@ -44,6 +44,26 @@ to move between these:
 |`yt.`| Yank (copy) from current position until but not including next `.`|
 |`yf.`| Yank (copy) from current position until and including next `.`|
 
+## Layout
+
+#### Wrapping lines
+
+To automatically wrap lines at column 80, set `textwidth` to 80:
+
+```
+:set textwidth=80
+```
+
+This will make lines wrap as you type them. To format existing text according to the new `textwidth`, select the text and type `gq`.
+
+#### Coloured guide line
+
+To highlight column 80, set `colorcolumn` to 80 (or use the shorthand `cc`):
+
+```
+:set cc=80
+```
+
 ## Visual Block Mode
 
 Visual block mode allows you to edit a consecutive set of lines in one go. You enter Visual Block Mode, select a number of consecutive lines, perform the desired operation and then, when you hit `ESC`, the operation is performed on all the selected lines.
